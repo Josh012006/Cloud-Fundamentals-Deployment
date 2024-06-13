@@ -15,7 +15,7 @@ function TaskList() {
     useEffect(() => {
 
         async function fetchTasks() {
-            const myTasks = await axios.get('http://localhost:3000/getAllTasks');
+            const myTasks = await axios.get('https://mytasks-tq72.onrender.com/getAllTasks');
 
             if(myTasks.status === 200) {
                 setTasks(myTasks.data);

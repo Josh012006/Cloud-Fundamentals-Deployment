@@ -25,7 +25,7 @@ function AddTask() {
                 throw Error('Infos were not taken successfully from form!');
             }
 
-            const response = await axios.post('http://localhost:3000/addTask', JSON.stringify(task), {
+            const response = await axios.post('https://mytasks-tq72.onrender.com/addTask', JSON.stringify(task), {
                 headers: {
                     'Content-Type': 'application/json'
                 },

@@ -15,7 +15,7 @@ export default function Task({ID, Name, Description, isCompleted, onTaskCompleti
     }, [isCompleted])
 
     const handleClick = async () => {
-        const result = await axios.get(`/markAsCompleted/${ID}`);
+        const result = await axios.get(`https://mytasks-tq72.onrender.com/markAsCompleted/${ID}`);
 
         if(result.status === 200) {
             onTaskCompletion(ID);
